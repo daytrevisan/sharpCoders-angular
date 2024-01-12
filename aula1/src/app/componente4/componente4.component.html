@@ -1,0 +1,10 @@
+<!-- Aqui aparece o texto enquanto digitamos -->
+<h1>{{texto}}</h1>
+<input type="text" [(ngModel)]="texto">
+
+<!-- Já no forms, o ngModel precisa de um identificador 'name' para fazer o mesmo -->
+<h1>{{email}} - {{senha}}</h1>
+<form>
+    <input type="email" name="email" [(ngModel)]="email">
+    <input type="password" name="senha" [(ngModel)]="senha">
+</form>
