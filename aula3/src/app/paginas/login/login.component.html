@@ -1,0 +1,15 @@
+<!-- Testar formulários -->
+
+<!-- <p>{{formulario.value | json}}</p> -->
+
+<!-- Verificar os inputs -->
+<!-- <p *ngIf="formulario.get('email')?.hasError('required')">O email precisa ser informado.</p> -->
+<!-- <p *ngIf="formulario.get('email')?.hasError('email')">Informe um email válido.</p> -->
+
+<!-- *required* e *email* estão fazendo referência ao *Validator.Required* e *Validator.Email* do arquivo ts (login.component.ts) -->
+
+<form [formGroup]="formulario" (submit)="autenticar()">
+    <input type="email" formControlName="email" placeholder="Informe seu email" class="form-control">
+    <input type="password" formControlName="senha" placeholder="Informe sua senha" class="form-control">
+    <input type="submit" value="Entrar" class="btn btn-primary" [disabled]="formulario.invalid">
+</form>
