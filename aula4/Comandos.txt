@@ -1,0 +1,10 @@
+CRIAR PROJETO: ng new aula04
+
+CRIAR COMPONENTE: ng g c componentes/postagem
+                  ng generate component componentes/postagem
+
+CRIAR UM SERVIÇO: ng g s servicos/postagem
+- Utilizada para requisições, validação, formatação etc - GET, POST, DELETE
+- Para regras de negócio reutilizáveis
+
+EXECUTAR PROJETO: ng s
